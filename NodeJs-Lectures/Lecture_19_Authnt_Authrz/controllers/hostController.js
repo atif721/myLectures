@@ -6,6 +6,7 @@ export const getAddHome = (req, res, next) => {
     currentPage: "add-home",
     editing: false,
     isLoggedIn: req.isLoggedIn,
+    user: req.session.user,
   });
 };
 
@@ -24,6 +25,7 @@ export const getEditHome = (req, res, next) => {
       currentPage: "host-homes",
       editing: editing,
       isLoggedIn: req.isLoggedIn,
+      user: req.session.user,
     });
   });
 };
@@ -35,6 +37,7 @@ export const getHostHome = (req, res, next) => {
       pageTitle: "Host Home List",
       currentPage: "host-homes",
       isLoggedIn: req.isLoggedIn,
+      user: req.session.user,
     });
   });
 };

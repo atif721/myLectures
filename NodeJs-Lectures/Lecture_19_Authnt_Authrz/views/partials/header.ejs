@@ -5,29 +5,32 @@
         <a class="" href="/">airbnb</a>
       </li>
       <% if (isLoggedIn) { %>
-        <li>
-          <a class="<%= currentPage === 'home-list' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/home">Home Lists</a>
-        </li>
-        <li>
-          <a class="<%= currentPage === 'bookings' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/bookings">Bookings</a>
-        </li>
-        <li>
-          <a class="<%= currentPage === 'favourites' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/favourite-list"
-            >Favourtie Homes</a
-          >
-        </li>
-        <li>
-          <a class="<%= currentPage === 'host-homes' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/host/host-home-list"
-            >Host Homes</a
-          >
-        </li>
-        <li>
-          <a class="<%= currentPage === 'add-home' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/host/add-home"
-            >Add Home</a
-          >
-        </li>
+          <% if (user && user.userType === 'guest') { %>    
+              <li>
+                <a class="<%= currentPage === 'home-list' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/home">Home Lists</a>
+              </li>
+              <li>
+                <a class="<%= currentPage === 'bookings' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/bookings">Bookings</a>
+              </li>
+              <li>
+                <a class="<%= currentPage === 'favourites' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/favourite-list"
+                  >Favourtie Homes</a
+                >
+              </li>
+          <% } else { %>  
+              <li>
+                <a class="<%= currentPage === 'host-homes' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/host/host-home-list"
+                  >Host Homes</a
+                >
+              </li>
+              <li>
+                <a class="<%= currentPage === 'add-home' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/host/add-home"
+                  >Add Home</a
+                >
+              </li>
+          <% } %>
       <% } %>
-      <% if (!isLoggedIn) { %>
+      <% if (!isLoggedIn) { %>  
       <li class="">
           <a class="<%= currentPage === 'signup' ? 'bg-red-500' : 'hover:bg-red-500' %>" href="/signup">SignUp</a>
       </li>

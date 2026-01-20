@@ -9,6 +9,7 @@ export const getIndex = (req, res, next) => {
         pageTitle: "AirBnB Home",
         currentPage: "home",
         isLoggedIn: req.isLoggedIn,
+        user: req.session.user,
       });
     })
     .catch((err) => {
@@ -24,6 +25,7 @@ export const getHome = (req, res, next) => {
         pageTitle: "Home List",
         currentPage: "home-list",
         isLoggedIn: req.isLoggedIn,
+        user: req.session.user,
       });
     })
     .catch((err) => {
@@ -32,7 +34,12 @@ export const getHome = (req, res, next) => {
 };
 
 export const getBookings = (req, res, next) => {
-  res.render("store/bookings", { pageTitle: "My Bookings", currentPage: "bookings", isLoggedIn: req.isLoggedIn });
+  res.render("store/bookings", {
+    pageTitle: "My Bookings",
+    currentPage: "bookings",
+    isLoggedIn: req.isLoggedIn,
+    user: req.session.user,
+  });
 };
 
 export const getFavouriteList = (req, res, next) => {
@@ -45,6 +52,7 @@ export const getFavouriteList = (req, res, next) => {
         pageTitle: "My Favourites",
         currentPage: "favourites",
         isLoggedIn: req.isLoggedIn,
+        user: req.session.user,
       });
     })
     .catch((err) => {
@@ -97,6 +105,7 @@ export const getHomeDetails = (req, res, next) => {
           pageTitle: "Home Details",
           currentPage: "Home",
           isLoggedIn: req.isLoggedIn,
+          user: req.session.user,
         });
       }
     })

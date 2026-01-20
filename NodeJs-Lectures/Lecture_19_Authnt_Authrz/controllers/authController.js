@@ -9,6 +9,7 @@ const getSignup = (req, res, next) => {
     isLoggedIn: false,
     errors: [],
     oldInput: { firstName: "", lastName: "", email: "", password: "", userType: "" },
+    user: {},
   });
 };
 
@@ -72,6 +73,7 @@ const postSignup = [
         isLoggedIn: true,
         errors: errors.array().map((err) => err.msg),
         oldInput: { firstName, lastName, email, password, userType },
+        user: {},
       });
     }
 
@@ -91,6 +93,7 @@ const postSignup = [
           isLoggedIn: true,
           errors: [err.message],
           oldInput: { firstName, lastName, email, password, userType },
+          user: {},
         });
       });
   },
@@ -103,6 +106,7 @@ const getLogin = (req, res, next) => {
     isLoggedIn: false,
     errors: [],
     oldInput: { email: "" },
+    user: {},
   });
 };
 
@@ -117,6 +121,8 @@ const postLogin = async (req, res, next) => {
         isLoggedIn: false,
         errors: ["User does not exist"],
         oldInput: { email },
+
+        user: {},
       });
     }
 
@@ -128,6 +134,7 @@ const postLogin = async (req, res, next) => {
         isLoggedIn: false,
         errors: ["Invalid password"],
         oldInput: { email },
+        user: {},
       });
     }
 

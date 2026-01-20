@@ -1,0 +1,5 @@
+react router
+layout routes
+route links
+Data fetching using loader
+submitting data using action

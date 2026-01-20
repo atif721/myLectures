@@ -1,0 +1,41 @@
+
+.ajaira{
+    height: 900px;
+}
+
+.nav-div{
+    margin-bottom: 25px;
+}
+
+.navbar1-img img{
+   
+    height: 35px;
+    max-width: 100%;
+}
+.navbar1-menu li{
+    display: inline-block;
+}
+.navbar1-menu li a{
+    display: block;
+    padding: 0 18px;
+    line-height: 53px;
+    font-size: 20px;
+}
+tr .time strong{
+    font-size: 30px;
+}
+tr .hour strong{
+    font-size: 20px; 
+}
+tr .bar{
+    font-weight: bold;
+}
+.card{
+    width: 290px;    
+    height: 450px;
+    
+}
+.img-jumb{
+   
+  }
+

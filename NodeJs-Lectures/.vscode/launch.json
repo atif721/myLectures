@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+      "name": "Launch Extension",
+      "outFiles": ["${workspaceFolder}/out/**/*.js"],
+      "preLaunchTask": "npm",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${file}"
+    },
+    {
+      "type": "node-terminal",
+      "name": "Run Script: start (Lecture_8_Error_Debugging)",
+      "request": "launch",
+      "command": "npm run start",
+      "cwd": "${workspaceFolder}/Lecture_8_Error_Debugging"
+    }
+  ]
+}

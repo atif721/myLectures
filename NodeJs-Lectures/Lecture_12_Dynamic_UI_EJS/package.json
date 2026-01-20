@@ -1,0 +1,27 @@
+{
+  "name": "lec10_airbnb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwindcss": "npx @tailwindcss/cli -i ./views/input.css -o ./public/styles/output.css --watch",
+    "start": "nodemon app.js & pnpm run tailwindcss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.27.0",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.23",
+    "body-parser": "^2.2.2",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

@@ -1,0 +1,9 @@
+/* CSS */
+.div1{
+    font-size: 25px;
+}
+
+#h1tag > p{
+    font-size: 30px;
+    font-weight: bold;
+}

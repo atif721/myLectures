@@ -1,0 +1,168 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.ajaira{
+    height: 2000px;
+}
+
+/* Header Section */
+.header{
+    background-color: #d35400;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.header-logo a img{
+    width: 200px;
+    margin-top: 4px;
+    margin-left: 80px;
+}
+.primary-menu ul{
+    text-align: right;
+    list-style: none;
+    margin-bottom: 0;
+    margin-right: 64px;
+}
+.primary-menu ul li{
+    display: inline-block;
+    margin-left: -5px;
+}
+.primary-menu ul li a{
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    background-color: #c0392b;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    line-height: 40px;
+    margin-top: 9px;
+    text-decoration: none;
+    transition: .6s;
+}
+.primary-menu ul li a:hover{
+    background-color: #d35400;
+    border-radius: 6px;
+}
+/* Banner section */
+.banner{
+    background: url(./img/depositphotos_118563558-stock-video-4k-slider-movement-from-a.jpg) no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+.banner-text h1{
+    background-color: #b33939;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 12px;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    line-height: 60px;
+    border-radius: 12px;
+}
+.banner-text h2{
+    color: #f39c12;
+    font-size: 43px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    background-color: #16a085;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 14px;
+}
+/* About section */
+.about{
+    background-color: #bdc3c7;
+}
+.about-d h2{
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: darkcyan;
+}
+.about-d p{
+    font-size: 20px;
+    font-style: oblique;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+/* Service section */
+.service{
+    background-color: #95a5a6;
+}
+.service-item{
+    border: 4px solid #218c74;
+    background-color: rgba(221, 221, 221, 0.527);
+}
+.service-item span{
+    font-size: 40px;
+    line-height: 60px;
+    color: #ff9f1a;
+    background-color: #218c74;
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin: 15px auto;
+    border-radius: 9px 0 9px 0;
+}
+.service-item h2{
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Crimson Text', serif;
+}
+.service-item p{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+/* Product section */
+.product{
+    background-color: #8395a7;
+}
+img{
+    max-width: 100%;
+}
+.p-img img{
+    width: 200px;
+}
+.product-right h2{
+    font-size: 45px;
+    font-style: italic;
+    border-bottom: 3px solid #0652DD;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.product-right ul{
+    list-style: square;
+    padding-left: 18px;
+}
+.product-right ul li{
+    padding: 10px;
+    background-color: grey;
+    margin-bottom: 9px;
+    font-size: 19px;
+    font-style: italic;
+}
+/* Footer section */
+.footer{
+    background-color: #40407a;
+    padding: 0;
+}
+.footer p{
+    font-size: 19px;
+    font-style: italic;
+    margin-bottom: 0;
+    color: #fff;
+}
+.social-menu{
+    margin-bottom: 0;
+}
+.social-menu li{
+    display: inline-block;
+}
+.social-menu li a{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 5px;
+}

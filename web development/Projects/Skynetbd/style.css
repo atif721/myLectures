@@ -1,0 +1,51 @@
+/* Default css */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+body, p {
+
+	/* font-family: 'Raleway', sans-serif;
+	line-height: 20px; */
+
+    font-weight: 400;
+}
+
+/* Navbar */
+.x{
+    position: fixed;
+    animation: reverse 4s infinite linear;
+}
+.x a img{
+    float: left; 
+    width: 120px; 
+    height: 120px; 
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.navbar-inverse {
+	background-color: #222;
+	border-color: #080808;
+}
+
+
+
+
+/* .navbarlist ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 35px;
+    margin-top: 0px;
+    list-style: none;
+} */

@@ -1,0 +1,52 @@
+{
+  "hash": "f3521cd0",
+  "configHash": "a8900852",
+  "lockfileHash": "479c2905",
+  "browserHash": "d6413773",
+  "optimized": {
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "acdbcca9",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "c895bd86",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "2be1a7bb",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "0d5b9851",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "9420c0ce",
+      "needsInterop": true
+    },
+    "react-icons/ai": {
+      "src": "../../react-icons/ai/index.mjs",
+      "file": "react-icons_ai.js",
+      "fileHash": "55aea906",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-T37TWCKW": {
+      "file": "chunk-T37TWCKW.js"
+    },
+    "chunk-QH6HOCAD": {
+      "file": "chunk-QH6HOCAD.js"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.tst1{
+    background-color: aqua;
+    height: 325px;
+    width: 30%;
+    margin: 125px 50px ;
+    display: inline-block;
+}
+.tst2{
+    background-color: yellow;
+    height: 325px;
+    width: 30%;
+    margin: 125px 50px ;
+    display: inline-block;
+}
+.text-body p{
+   
+}

@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:400,400i,500,500i,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Sinthia Telecom | Internet Service Provider</title>
+
+    <style>
+        body {
+            font-family: open sans,sans-serif;
+            font-weight: 400;
+            color: #333;
+        }
+        body h1 h2 h3 h4 h5 h6{
+           font-family: roboto,sans-serif;
+        }
+        .section {
+            margin: 60px 0;
+            
+        }
+        .top{
+            margin-bottom: 50px;
+            padding-top: 6px;
+        }
+        h2{
+            font-size: 35px;
+            font-weight: 700;
+            line-height: 35px;
+            margin-top: 15px;
+            text-transform: uppercase;
+        }
+        i .fa-rss {
+            color: #0093d5;
+            margin-top: 10px;
+            transform: rotate(-45deg);
+            font-size: 3rem;
+        }
+
+        /* Navbar section */
+        .navbarlist ul li a {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 35px;
+            margin-top: 0px;
+            list-style: none;
+        }
+        /* Banner section */
+        .bannersection{
+            background-color: #56abd4;
+        }
+        .row-2{
+            position: relative;
+            top: 0;
+            right: 0;
+            z-index: 10;
+        }
+        .bannersection h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            color: #fff;
+        }
+        .bannersection h5 {
+            font-size: 31px;
+            margin: 10px 0 32px;
+            color: #fff;
+        }
+        .bannersection p {
+            color: #fff;
+            font-size: 22px;
+        }
+        .bannersection i {
+            font-size: 22px;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+        .wave{
+    
+        }
+        .wave img {
+            width: 100%;
+            margin-top: -220px;
+            height: 380px;
+        } 
+        /* About Section */
+        .about-bottom p {
+            font-size: 20px;
+            text-align: justify;
+            line-height: 36px;
+            margin: 0 0;
+        }
+        /* Features Section */
+        
+        @media only screen and (max-width: 600px) {
+            .card1{
+                background-color: #e6f0ff; 
+            }
+        }
+        
+        .cardedit i {
+            font-size: 8rem;
+            color: #0093d5;
+            padding: 30px;
+            border-radius: 122px;
+        }
+        #card-edit{
+            border: none;
+            box-shadow: 0 3px 16px 3px rgba(0,0,0,.15);
+        }
+        .features-edit h2 {
+            font-size: 20px;
+            line-height: 42px;
+        }
+        /* Package section */
+        #packageedit{
+            border: none;
+            box-shadow: 0 3px 16px 3px rgba(0,0,0,.15);
+        }
+        .packagebody h1 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 32px;
+        }
+        .packagebody h1 span {
+            color: #0093d5;
+        }
+        .packagebody h2 {
+            padding-bottom: 18px;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        .packagebody p {
+            font-size: 16px;
+        }
+        .packagebody p i {
+            color: #0093d5;
+        }
+        /* Contact section */
+        .contactsection {
+            background: rgb(208,228,247);
+            background: -moz-linear-gradient(left,rgba(208,228,247,1) 0%,rgba(103,186,227,1) 24%,rgba(86,171,212,1) 50%,rgba(103,186,227,1) 73%,rgba(135,188,234,1) 100%);
+            background: -webkit-linear-gradient(left,rgba(208,228,247,1) 0%,rgba(103,186,227,1) 24%,rgba(86,171,212,1) 50%,rgba(103,186,227,1) 73%,rgba(135,188,234,1) 100%);
+            background: linear-gradient(to right,rgba(208,228,247,1) 0%,rgba(103,186,227,1) 24%,rgba(86,171,212,1) 50%,rgba(103,186,227,1) 73%,rgba(135,188,234,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7',endColorstr='#87bcea',GradientType=1 );
+        }
+        .contactbottom address {
+            font-size: 20px;
+            font-family: cursive;
+            margin-top: 55px;
+        }
+        .contactbottom p {
+            font-size: 20px;
+            font-family: cursive;
+        }
+        /* Social section */
+        .socialsection {
+            background: #60b4dd;
+            background: -moz-linear-gradient(left,rgba(96,180,221,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 100%,rgba(159,216,239,1) 100%);
+            background: -webkit-linear-gradient(left,rgba(96,180,221,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 100%,rgba(159,216,239,1) 100%);
+            background: linear-gradient(to right,rgba(96,180,221,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 100%,rgba(159,216,239,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#60b4dd',endColorstr='#9fd8ef',GradientType=1 );
+            margin-bottom: -90px;
+            border-radius: 100px;
+        }
+        .socialbottom i {
+            font-size: 54px;
+            margin: 0 25px;
+            margin-bottom: 55px;
+        }
+        /* Footer section */
+        .footer-section {
+            background: #2b8ecc;
+            margin-bottom: 0;
+            display: block;
+            overflow: hidden;
+        }
+        .footer-section h5 {
+            padding-bottom: 10px;
+            font-size: 16px;
+            margin-top: 27px;
+            color: #ff0;
+            font-weight: 700;
+        }
+        .footer-section p {
+            font-style: italic;
+        }
+        .footer-section h3 {
+            font-family: -webkit-body;
+        }
+
+    </style>
+
+
+  </head>   
+  <body>    
+
+    <!-- Header Section start -->
+
+    <div class="header-a container-fluid py-1 fixed-top" style="background-color: #56abd4 ;">  
+    <div class="row">
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container text-center">  
+                <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="brand-icon" >  
+                </a> 
+                <button  class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarid" > 
+                <i class="fa fa-bars" style="color: #fff;" aria-hidden="true"></i>
+                </button>
+                <div class="navbarlist collapse navbar-collapse text-right" id="navbarid">
+                    <ul class="navbar1-menu navbar-nav text-center ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Home </a>
+                    </li>     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> About </a>
+                    </li>      
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Services </a>
+                    </li>      
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Package </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Contact </a>
+                        </li>            
+                    </ul> 
+                </div>
+            </div>  
+        </nav>    
+    </div>
+    </div>
+
+    <!-- Header Section end -->
+      
+    <!-- Banner Section start -->
+
+    <div class="container-fluid bannersection pt-5 pb-0 section" id="banner">
+    <div class="container">
+        <div class="row row-2" >
+        <div class="col-lg-6 col-md-6 col-sm-6 col-12">
+            <img src="img/banner.png" alt="" width="100%" height="auto"> 
+            </div>  
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12 my-auto text-white">
+                <h1>SINTHIA TELECOM</h1>
+                <h5 class="mb-5">Best Internet Service Provider</h5>
+                <p>Stay with Sinthia Telecom for experience best internet services.</p>
+                <a class="text-white" href="#about"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i>Know More</a>
+            </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="wave">
+        <img src="img/wave.png" alt="wave img">
+    </div>
+    <!-- Banner Section end -->
+
+    <!-- About section start -->
+    <div class="about-section section">
+        <div class="container text-center">
+            <div class="about-top top">
+                <a href="#banner">
+                 <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+                </a> 
+                <h2>WHY CHOOSE US</h2>
+            </div> 
+        </div>
+        <div class="about-bottom container mt-5">
+        <div class="row clearfix">
+            <div class="col-lg-6 col-md-6 left">
+                <img src="img/about.png" alt="about image" width="100%">
+            </div> 
+            <div class="about-bottom col-lg-6 col-md-6 right">
+                <p>Sinthia Telecom can serve its valued customers with reliable support and prompt services. With a team of dedicated
+                engineers and supporting staff working tirelessly behind your system, you will have more quality time to
+                manage your priorities.Our mission will always be Solution-Oriented aiming to exceed the customers’ requirements
+                with an eye for future business expansion needs, in the most cost-effective way. Post-implementation and after-sales
+                support is of the utmost concern.</p> 
+            </div> 
+         </div>  
+        </div> 
+    </div>
+    <!-- About Section end -->
+
+    <!-- Features Section start -->
+    <div class="features-section section" id="features">
+      <div class="container text-center">
+        <div class="features-top top">
+            <a href="#banner">
+             <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+            </a> 
+            <h2>SERVICE Features</h2> 
+        </div>
+        <div class="features-bottom mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-3 col-sm-10 col-12 mb-4">
+               <div class="card cardedit card1" id="card-edit">
+                <i class="fa fa-database" aria-hidden="true"></i>
+                <div class="card-body features-edit">
+                    <h2 class="card-title">
+                    Affordable<br>Packages
+                    </h2>
+                </div>
+               </div> 
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-10 col-12 mb-4">
+                <div class="card cardedit card1" id="card-edit">
+                 <i class="fa fa-usd" aria-hidden="true"></i>
+                 <div class="card-body features-edit">
+                    <h2 class="card-title">Low Cost<br>Installation</h2>
+                 </div>
+                </div> 
+             </div>
+             <div class="col-lg-3 col-md-3 col-sm-10 col-12 mb-4">
+                <div class="card cardedit card1" id="card-edit" >
+                 <i class="fa fa-server" aria-hidden="true"></i>
+                 <div class="card-body features-edit">
+                    <h2 class="card-title">FTP Server<br>(Movies, Drama, etc)</h2>
+                 </div>
+                </div> 
+             </div>
+             <div class="col-lg-3 col-md-3 col-sm-10 col-12">
+                <div class="card cardedit card1" id="card-edit" >
+                 <i class="fa fa-deaf" aria-hidden="true"></i>
+                 <div class="card-body features-edit">
+                    <h2 class="card-title">Installation<br>of New LAN</h2>
+                 </div>
+                </div> 
+             </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- Feaatures section end -->
+    
+    <!-- Package section start -->
+
+    <div class="package-section section">
+      <div class="container text-center">
+        <div class="package-top top">
+            <a href="#banner">
+                <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+            </a> 
+            <h2>OUR PACKAGES</h2>
+        </div> 
+        <div class="packagebody">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-4 col-md-4 col-sm-10 col-12 mr-3 mb-4">
+                <div class="card" id="packageedit">
+                <div class="card-body p-5">
+                    <h1 class="card-title">Package 1<br>(500 tk/<span>month</span>)</h1>
+                    <h2 class="card-title">Features include!</h2>
+                    <p class="card-text"><i class="fa fa-check"></i> 2.5 mbps Internet</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 30 mbps Youtube</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 30 mbps Facebook</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 100 mbps FTP</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 30 mbps BIDX</p>  
+                </div>  
+                </div> 
+                </div>  
+                <div class="col-lg-4 col-md-4 col-sm-10 col-12 mr-3 mb-4">
+                <div class="card" id="packageedit">
+                <div class="card-body p-5">
+                    <h1 class="card-title">Package 2<br>(700 tk/<span>month</span>)</h1>
+                    <h2 class="card-title">Features include!</h2>
+                    <p class="card-text"><i class="fa fa-check"></i> 4 mbps Internet</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 40 mbps Youtube</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 40 mbps Facebook</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 100 mbps FTP</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 30 mbps BIDX</p>
+                </div>  
+                </div>
+                </div>  
+                <div class="col-lg-4 col-md-4 col-sm-10 col-12 mr-3 mb-4">
+                <div class="card" id="packageedit">
+                <div class="card-body p-5">
+                    <h1 class="card-title">Package 3<br>(1000 tk/<span>month</span>)</h1>
+                    <h2 class="card-title">Features include!</h2>
+                    <p class="card-text"><i class="fa fa-check"></i> 6 mbps Internet</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 50 mbps Youtube</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 50 mbps Facebook</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 100 mbps FTP</p>
+                    <p class="card-text"><i class="fa fa-check"></i> 30 mbps BIDX</p>  
+                </div>  
+                </div>
+                </div>  
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-4 col-md-4 col-sm-10 col-12 mb-4">
+                <div class="card" id="packageedit">
+                    <div class="card-body p-5">
+                        <h1 class="card-title">Package 4<br>(1200 tk/<span>month</span>)</h1>
+                        <h2 class="card-title">Features include!</h2>
+                        <p class="card-text"><i class="fa fa-check"></i> 8 mbps Internet</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 50 mbps Youtube</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 50 mbps Facebook</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 100 mbps FTP</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 30 mbps BIDX</p>
+                    </div>
+                </div>
+                </div>  
+                <div class="col-lg-4 col-md-4 col-sm-10 col-12 mb-4">
+                <div class="card" id="packageedit">
+                    <div class="card-body p-5">
+                        <h1 class="card-title">Package 5<br>(1500 tk/<span>month</span>)</h1>
+                        <h2 class="card-title">Features include!</h2>
+                        <p class="card-text"><i class="fa fa-check"></i> 10 mbps Internet</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 50 mbps Youtube</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 50 mbps Facebook</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 100 mbps FTP</p>
+                        <p class="card-text"><i class="fa fa-check"></i> 30 mbps BIDX</p>
+                    </div>
+                </div>
+                </div>  
+            </div>      
+        </div>
+      </div>  
+    </div>
+
+    <!-- Package section end -->
+
+    <!-- Contact Section start -->
+    <div class="contactsection section pb-3" >
+      <div class="container text-center">
+        <div class="contact-top top">
+            <a href="#banner">
+                <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+            </a> 
+            <h2> Contact Us </h2>
+        </div> 
+        <div class="contactbottom">
+           <div class="row">
+             <div class="col-lg-6 col-md-6 col-sm-10 col-12 mt-5" style="text-align: left !important;">
+                <address>House 88 (Zodiac Palace), Ganakpara, Saheb Bazar, Ghoramara, Boalia, Rajshahi. Zip:6100</address>
+                <p>E-mail: care@sinthiaisp.net</p>
+                <p>Phone: +88-01885-988350</p>
+             </div>  
+             <div class="col-lg-6 col-md-6 col-sm-10 col-12">
+                 <form action="#">
+                    <div class="form-group clearfix">
+                       <label for="user" style="float: left;"> Name </label> 
+                       <input type="text" class="form-control">
+                    </div> 
+                    <div class="form-group mt-5 clearfix">
+                       <label for="email" style="float: left;"> Email </label> 
+                       <input type="email" class="form-control" required>
+                    </div> 
+                    <div class="form-group mt-5 clearfix">
+                       <label for="message" style="float: left;" > Message </label> 
+                       <textarea class="form-control" style="min-height: 150px;"></textarea>
+                    </div> 
+                    <div class="form-group mt-3">
+                    <input type="submit" value="Send" class="btn btn-primary px-5 " style="background: #2b63af;"> 
+                    </div>
+                 </form>
+             </div>  
+           </div> 
+        </div>
+      </div>    
+    </div>
+    <!-- Contact Section end -->
+
+    <!-- Social sites section start -->
+
+    <div class="socialsection section"> 
+       <div class="container text-center">
+        <div class="social-top top">
+            <a href="#banner">
+                <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+            </a> 
+            <h2>Find Us on Social Media</h2>
+        </div>   
+        <div class="socialbottom">
+            <a target="_blank" href="https://www.facebook.com"><i class="fa fa-facebook text-primary" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.google.com"><i class="fa fa-google-plus text-warning" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.twitter.com"><i class="fa fa-twitter text-primary" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.whatsapp.com"><i class="fa fa-whatsapp text-success" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.instagram.com"><i class="fa fa-instagram text-info" aria-hidden="true"></i></a>
+            <a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin text-dark" aria-hidden="true"></i></a>
+            <a target="_blank" href="https://www.youtube.com"><i class="fa fa-youtube-play text-danger" aria-hidden="true"></i></a>
+            </div>
+       </div> 
+    </div>
+
+    <!-- Social sites section end -->
+
+    <!-- Footer section start -->
+    <div class="footer-top " style="margin-top: -61px;">
+        <img src="img/wave2.png" alt=" wave img " height="250px" width="100%">
+    </div>
+    <div class="footer-section">
+       <div class="container text-center">
+        <div class="row text-light">
+            <div class="col-lg-3 col-md-3 col/sm-10 col-12">
+                <p class="mt-3">Thanks for Staying With Us</p>
+                <p><span>care@sinthiaisp.net</span></p>
+            </div>
+            <div class="col-lg-3 col-md-3 col/sm-10 col-12">
+                <a href="#banner"><i class="fa fa-rss fa-2x mt-2" style="color: #fff"></i></a>
+                <p>contact no: +88-01885-988350</p>
+            </div> 
+            <div class="col-lg-6 col-md-6 col/sm-10 col-12">
+                <h3>OFFICE ADDRESS:</h3>
+                <p>House 88 (Zodiac Palace), Ganakpara, Saheb Bazar, Ghoramara, Boalia, Rajshahi. Zip:6100</p>
+            </div> 
+        </div>
+            <h5>Powered by: Desktop IT</h5>
+       </div> 
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+  </body>
+</html>

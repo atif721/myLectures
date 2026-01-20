@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer components {
+  h1 {
+    @apply font-bold;
+  }
+}
+
+/* .btn {
+  @apply mx-10 my-10 inline-block bg-red-500 text-white font-semibold text-lg py-3 px-5 rounded-full hover:bg-red-900 hover:transition-colors focus:ring-2 ring-offset-2 ring-green-500;
+} */
+
+@theme {
+  --breakpoint-lg: 50rem;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+button {
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+/* Default Css */
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+div a img{
+    max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #000 ;
+}
+body,h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: 'Work Sans', sans-serif;
+}
+::placeholder { 
+    opacity: .3; 
+}
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+/* Header section */
+.navbar1{
+    background-color: #000;
+}

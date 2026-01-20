@@ -1,0 +1,19 @@
+.tst1{
+    height: 425px;
+    width: 70%;
+    margin: 65px 50px ;
+    display: inline-block;
+    border: 2px solid #000;
+}
+.first{
+    background-color: tan;
+}
+.second{
+    background-color: tomato;
+}
+.third{
+    background-color: yellow;
+}
+.buttons{
+    margin: 0 0 150px 8em;
+}

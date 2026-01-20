@@ -1,0 +1,14 @@
+#first,#second{
+    height: auto;
+    width: 80%;
+    margin: 65px 50px ;
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: aquamarine;
+}
+#second{
+    background-color: white;
+    border: none;
+}
+
+

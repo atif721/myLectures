@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/src/assets/favicon.ico" type="image/x-icon" />
+    <title>Nike Website</title>
+  </head>
+  <body class="bg-[#ffffff]">
+    <header class="py-3">
+      <div class="container mx-auto w-3/4 flex justify-between">
+        <a href="" class="flex"
+          ><img class="h-10 w-50 mt-8" src="/src/assets/images/header-logo.svg" alt=""
+        /></a>
+        <nav>
+          <button
+            id="mobile_icon"
+            class="text-black text-end flex sm:hidden cursor-pointer mt-7">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-10">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+          <ul
+            id="main_menu"
+            class="absolute w-full left-0 top-20 p-4 text-center hidden sm:relative sm:top-0 sm:flex mt-5">
+            <li class="mb-2 sm:mb-0 sm:ml-5">
+              <a
+                href=""
+                class="text-lg text-[#6d6d6d] hover:bg-[#6d6d6d] hover:text-white hover:transition-colors hover:p-3"
+                >Home</a
+              >
+            </li>
+            <li class="mb-2 sm:mb-0 sm:ml-15">
+              <a
+                href=""
+                class="text-lg text-[#6d6d6d] hover:bg-[#6d6d6d] hover:text-white hover:transition-colors hover:p-3"
+                >About US</a
+              >
+            </li>
+            <li class="mb-2 sm:mb-0 sm:ml-15">
+              <a
+                href=""
+                class="text-lg text-[#6d6d6d] hover:bg-[#6d6d6d] hover:text-white hover:transition-colors hover:p-3"
+                >Products</a
+              >
+            </li>
+            <li class="mb-2 sm:mb-0 sm:ml-15">
+              <a
+                href=""
+                class="text-lg text-[#6d6d6d] hover:bg-[#6d6d6d] hover:text-white hover:transition-colors hover:p-3"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="px-3 relative">
+      <section class="w-full flex xl:flex-row flex-col justify-between">
+        <div class="pl-10">
+          <p class="mb-8 text-[#ff6452] text-2xl mt-5">Our Summer Collection</p>
+          <h1 class="w-190 block font-bold text-8xl font-palanquin mb-8 bg-white">
+            The New Arrival
+          </h1>
+          <h1 class="mb-8 not-first-of-type:font-bold text-8xl">
+            <span class="text-[#ff6452]">Nike</span> Shoes
+          </h1>
+          <p class="text-lg mt-5">
+            Discover stylish Nike arrivals, quality comfort, and innovation for your
+            active life.
+          </p>
+          <button class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-md">
+            Shop Now
+          </button>
+        </div>
+        <div class="relative">
+          <img class="absolute w-300 h-300 right-10" src="/src/assets/images/collection-background.svg" alt="" />
+        </div>
+      </section>
+    </section>
+
+    <script type="module" src="src/main.jsx"></script>
+    <script type="module" src="/src/script.js"></script>
+  </body>
+</html>

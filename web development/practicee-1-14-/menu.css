@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Menu Css */
+.header-menu{
+    background: rgb(52, 152, 219);
+}
+.header-menu ul{
+    text-align: center;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+    position: relative;
+}
+.header-menu ul li a{
+    color: #fff;
+    padding: 13px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    border-right: 1px solid #ddd;
+}
+.header-menu ul li:first-child a{
+    border-left: 1px solid #ddd;
+}
+.header-menu ul li:hover > a{
+    background-color: rgb(41, 128, 185);
+    transition: .6s;
+    
+}
+/* dropdwon menu start */
+.header-menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: rgb(52, 152, 219);
+    width: 200px;
+    border-top: 1px solid #ddd;
+    transition: .4s;
+    
+}
+.header-menu ul li ul li{
+    display: block;
+    margin-left: 0;
+}
+.header-menu ul li ul li a{
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+.header-menu ul ul li:first-child a{
+    border-left: none;
+}
+/* dropdwon menu hover part */
+.header-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* social menu */
+.socialMenu{
+    margin-top: 222px;
+}
+.socialMenu ul{
+    text-align: center;
+}
+.socialMenu ul li{
+    display: inline-block;
+}
+.socialMenu ul li a{
+    color: #fff;
+    background-color: rgba(25, 42, 86,1.0);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 85px;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    text-align: center;
+    font-size: 45px;
+    color: blue;
+    margin-top: 23px;
+}
+h2::before{
+        content: 'Age-';
+}
+h2::after{
+    content: '-Pore';
+}
+h1{
+    text-align: center;
+}
+p{
+  text-align: justify;
+  font-size: 36px;
+  font-style: italic;  
+  border: 5px solid blue;
+}
+p::before{
+    content: '"';
+}
+p::after{
+    content: '"';
+}
+.button{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.clicklink{
+    color: #fff;
+    background-color: #1B9CFC;
+    font-size: 25px;
+    display: inline-block;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+.clicklink::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: red;
+    border-radius: 15px;
+    z-index: -1;
+
+    transition: .5s;
+   
+    
+}
+.clicklink:hover::before{
+    height: 100%;
+}
+
+.icon Ul{
+    margin-bottom: 85px;
+    margin-left: 55px;
+}
+.icon Ul li{
+    font-size: 60px;
+    list-style: none;
+}
+.icon Ul li::before{
+    content: "\f09a";
+    font-family: "Font Awesome 5 brands";
+    /* font-weight: 600; */
+}

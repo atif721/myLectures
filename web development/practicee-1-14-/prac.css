@@ -1,0 +1,233 @@
+/* Default css's */
+*{
+   margin: 0; 
+   padding: 0;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.fix-width{
+    width: 1078px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-left{
+    text-align: left;
+}
+.ajaira{
+    height: 2000px;
+}
+/* Header section */
+.header{
+    background-color: #d35400;
+}
+.header-left{
+    float: left;
+    width: 30%;
+}.header-left a img{
+    width: 400px;
+    height: auto;
+    margin-top: 15px;
+}
+.header-left a img{
+    width: 400px;
+    height: auto;
+}
+.header-right{
+    float: right;
+    width: 70%;
+}
+.header-right ul {
+    text-align: right;
+}
+.header-right ul li {
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-right ul li a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #c0392b;
+    padding: 0 15px;
+    font-size: 25px;
+    line-height: 60px;
+    display: block;
+    margin-top: 11px;
+    border: 1px solid #ddd;
+    transition: .6s;
+}
+.header-right ul li a:hover{
+    background-color: #d35400;
+    border-radius: 9px;
+}
+/* Banner section */
+.banner{
+    background: url(./img/depositphotos_118563558-stock-video-4k-slider-movement-from-a.jpg) no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+}
+.banner-caption h1{
+    background-color: #b33939;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 12px;
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    line-height: 60px;
+}
+.banner-caption h2 {
+    color: #f39c12;
+    font-size: 43px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    background-color: #16a085;
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 14px;
+}
+/* About section */
+.about{
+    margin: 60px auto;
+    border: 4px solid #0652DD;
+    width: 1000px;
+}
+.about h2{
+    font-size: 45px;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: darkcyan;
+}
+.about p{
+    max-width: 600px;
+    margin: auto;
+    font-size: 20px;
+    font-style: oblique;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+/* Service Header section */
+.servc {
+    margin-bottom: 15px;
+}
+.servc h2 {
+    color: #ff5252;
+    background-color: #ffda79;
+    width: 215px;
+    margin: -1px auto;
+    font-size: 35px;
+    line-height: 70px;
+    border-radius: 15px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+}
+.servc span {
+    font-size: 50px;
+    color: #40407a;
+}
+/* Service Section */
+.service-item {
+    float: left;
+    width: 31.3%;
+    margin-right: 1%;
+    margin-left: 1%;
+    border: 1px solid rgba(3, 231, 201, 0.603);
+    box-sizing: border-box;
+    padding: 15px 20px;
+}
+.service-item span {
+    font-size: 40px;
+    line-height: 60px;
+    color: #ff9f1a;
+    background-color: #218c74;
+    display: block;
+    height: 60px;
+    width: 60px;
+    margin: 15px auto;
+    border-radius: 9px 0 9px 0;
+}
+.service-item h2 {
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Crimson Text', serif;
+}
+.service-item p {
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+/* Blog section */
+.blog-container {
+    margin-top: 40px;
+}
+.blog-content-right {
+    float: left;
+    width: 70%;
+}
+.blog-item img {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+.blog-item {
+    margin-bottom: 26px;
+}
+.blog-notification-left {
+    float: right;
+    width: 25%;
+}
+.blog-notification-left h2 {
+    font-size: 45px;
+    font-style: italic;
+    border-bottom: 3px solid #0652DD;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.blog-notification-left ul {
+    list-style: none;
+}
+.blog-notification-left ul li {
+    padding: 10px;
+    background-color: grey;
+    margin-bottom: 9px;
+    font-size: 19px;
+    font-style: italic;
+}
+/* Footer section */
+.footer{
+    background-color: #40407a;
+    padding: 15px 0;
+}
+.footer-left{
+    float: left;
+    width: 40%;
+}
+.footer-left p{
+    font-size: 19px;
+    font-style: italic;
+}
+.footer-right{
+    float: right;
+    width: 60%; 
+
+}
+.social-menu{
+    text-align: right;
+}
+.social-menu li{
+    display: inline-block;
+}
+.social-menu li a{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 5px;
+}

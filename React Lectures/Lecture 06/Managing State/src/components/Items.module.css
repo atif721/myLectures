@@ -1,0 +1,13 @@
+.item-bg-set {
+  color: aqua;
+}
+
+.item-span {
+  color: rgb(255, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.buy_button {
+  float: right;
+}

@@ -1,0 +1,9 @@
+.tst1{
+    background-color: aqua;
+    height: 325px;
+    width: 30%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    display: inline-block;
+    overflow: auto;
+}

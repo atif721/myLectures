@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+
+.pr-heading {
+  background-color: cadetblue;
+  color: bisque;
+  font-size: 3rem;
+}

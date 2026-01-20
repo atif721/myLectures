@@ -1,0 +1,24 @@
+.app_container {
+  display: flex;
+}
+
+.app_container .content {
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 800px;
+}
+
+.post_card {
+  width: 30rem;
+  margin: 20px 50px;
+}
+
+.reactions {
+}
+
+.create-post {
+  width: 80%;
+  margin: 10% 0 0 10%;
+}

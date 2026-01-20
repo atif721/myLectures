@@ -1,0 +1,54 @@
+// basic redux
+npm init -y
+npm install redux
+import in node Const redux = require(‘redux’);
+We need to setup all 4 basic things:
+1. Reducer
+2. Store
+3. Subscriber
+4. Actions
+node redux-demo.js command to run node server
+
+//redux with react
+
+Npm install redux
+Npm install react-redux
+Create store folder with Index.js file
+Creating the store using
+  Import {createStore} from redux.
+
+Providing the store with react
+  1. Provider from react-redux
+  2. <Provider store={store}><App /></Provider>
+
+Using the store
+  1. useSelector hook gets a slice of the store.
+  Const counter = useSelector(state => state.counter);
+  2. Subscription is already setup and only will re-execute when only your slice is changed. Subscription is automatically cleared also.
+
+Dispatch Actions using the useDispatch hook.
+
+
+
+
+// redux-toolit react
+
+Npm install @reduxjs/toolkit
+Remove redux from package.json
+Import {createSlice} from “@reduxjs/toolkit”
+Slices of the store can be created using the following syntax:
+Const slice = createSlice({
+  name: "”,
+  initialState: {},
+  reducers: {
+  smallReducerMethods: (state, action) => {
+  },
+  }
+})
+
+ConfigureStore combines multiple reducers and can be used as:
+configureStore({
+  reducer: {name: slice.reducer}
+}) 
+Export actions = slice.actions;
+Actions can be dispatched like: actions.reducerMethod(payload);

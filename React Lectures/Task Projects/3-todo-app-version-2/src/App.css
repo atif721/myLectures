@@ -1,0 +1,12 @@
+.inp {
+  width: 100%;
+}
+
+.todo-container {
+  width: 750px;
+  margin: 0 auto;
+}
+
+.item-container {
+  text-align: left;
+}

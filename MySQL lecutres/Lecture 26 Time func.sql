@@ -1,0 +1,12 @@
+SELECT current_timestamp() AS "TIME NOW";
+SELECT localtime() AS "TIME NOW";
+SELECT localtimestamp() AS "TIME NOW";
+SELECT time("2002-01-28 13:15:55") AS "TIME NOW";
+SELECT minute("2002-01-28 19:45:55") AS "TIME NOW";
+SELECT timediff("19:45:55", "12:45:58") AS "TIME NOW";
+SELECT addtime("2002-01-28 1:45:55", "5:5:5") AS "TIME NOW";
+SELECT maketime(1,45,55) AS "TIME NOW";
+SELECT timestamp("2002-01-28", "1:45:55") AS "TIME NOW";
+SELECT time_format("13:45:55", "%H:%i:%s %p") AS "TIME NOW";
+SELECT time_to_sec("13:45:55") AS "TIME NOW";
+SELECT sec_to_time("15474") AS "TIME NOW";

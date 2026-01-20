@@ -1,0 +1,32 @@
+<%- include("../partials/head") %>
+</head>
+  <body>
+  <%- include("../partials/header") %>
+    <main class="flex flex-col gap-5 items-center container mx-auto mt-8 p-8 bg-white rounded-lg shadow-md">
+      <h1 class="text-3xl font-bold text-center text-gray-800">Login in your airbnb account</h1>
+      <div class="">
+        <form action="/login" method="POST" class="flex flex-col gap-5 w-110.5">
+          <div>
+            <input
+            class="w-full px-4 py-2 mb-2 rounded-md outline outline-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 rounded-sm"
+            type="email"
+            name="username"
+            id=""
+            placeholder="Enter Your Email" 
+            required
+            />
+            <input
+            class="w-full px-4 py-2 mb-2 rounded-md outline outline-gray-400  focus:outline-none focus:ring-2 focus:ring-red-500 rounded-sm"
+            type="password"
+            name="password"
+            id=""
+            placeholder="Enter Your Password" 
+            required
+            />
+          </div>
+          <button type="submit" class="bg-[#ff5a5f] text-white p-2 cursor-pointer rounded-sm">Login</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

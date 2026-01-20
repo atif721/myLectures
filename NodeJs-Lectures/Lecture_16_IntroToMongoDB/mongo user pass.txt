@@ -1,0 +1,4 @@
+username : "root"
+password: "pass321"
+
+mongodb+srv://root:pass321@learningnodemongo.6f1howb.mongodb.net/?appName=LearningNodeMongo

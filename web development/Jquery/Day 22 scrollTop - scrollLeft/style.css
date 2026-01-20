@@ -1,0 +1,14 @@
+button{
+    margin-left: 8rem;
+    color: tan;
+} 
+.box1234{
+   
+    background-color: sandybrown;
+    padding: 65px;
+    border: 2px solid #000;
+    position: fixed;
+    left: 20px ;
+    bottom: 30px;
+}  
+

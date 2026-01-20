@@ -1,0 +1,88 @@
+{
+  "hash": "d00439f5",
+  "configHash": "739dcdfe",
+  "lockfileHash": "a9f0ceca",
+  "browserHash": "b4376f7e",
+  "optimized": {
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "57ef5d8b",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "1b643601",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "03eca431",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "c8aa519a",
+      "needsInterop": true
+    },
+    "@reduxjs/toolkit": {
+      "src": "../../@reduxjs/toolkit/dist/redux-toolkit.modern.mjs",
+      "file": "@reduxjs_toolkit.js",
+      "fileHash": "b2723935",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "ea4b26df",
+      "needsInterop": true
+    },
+    "react-loading-skeleton": {
+      "src": "../../react-loading-skeleton/dist/index.js",
+      "file": "react-loading-skeleton.js",
+      "fileHash": "5ccca6b4",
+      "needsInterop": false
+    },
+    "react-redux": {
+      "src": "../../react-redux/dist/react-redux.mjs",
+      "file": "react-redux.js",
+      "fileHash": "5662a6bc",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "fd81c86c",
+      "needsInterop": false
+    },
+    "react-icons/io": {
+      "src": "../../react-icons/io/index.mjs",
+      "file": "react-icons_io.js",
+      "fileHash": "d58dbb02",
+      "needsInterop": false
+    },
+    "react-icons/md": {
+      "src": "../../react-icons/md/index.mjs",
+      "file": "react-icons_md.js",
+      "fileHash": "9743d996",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-TJONBCBV": {
+      "file": "chunk-TJONBCBV.js"
+    },
+    "chunk-N4JV66NV": {
+      "file": "chunk-N4JV66NV.js"
+    },
+    "chunk-CBG3MKAY": {
+      "file": "chunk-CBG3MKAY.js"
+    },
+    "chunk-EQCVQC35": {
+      "file": "chunk-EQCVQC35.js"
+    }
+  }
+}

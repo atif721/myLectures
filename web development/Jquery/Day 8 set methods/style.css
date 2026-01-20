@@ -1,0 +1,12 @@
+.tst1{
+    background-color: aqua;
+    height: 525px;
+    width: 60%;
+    margin: 125px 25px 30px 50px ;
+    display: inline-block;
+}
+
+.red{
+    color:red;
+}
+

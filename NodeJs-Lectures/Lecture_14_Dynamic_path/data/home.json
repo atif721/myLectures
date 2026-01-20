@@ -1,0 +1,50 @@
+[
+  {
+    "houseName": "First Home",
+    "price": "600",
+    "location": "Rajshahi",
+    "rating": "10/10",
+    "photoURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.lifehack.org%2Fwp-content%2Fuploads%2F2017%2F09%2F21033838%2Fairbnb-homes-for-inspiration.jpeg&f=1&nofb=1&ipt=c597b45c2a5aae6d4137acb4f4488e985422232c17dc62c5023080e0db33ea13",
+    "id": "1"
+  },
+  {
+    "id": "2",
+    "houseName": "Second Home",
+    "price": "620",
+    "location": "Dhaka",
+    "rating": "7/10",
+    "photoURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fa0.muscache.com%2Fim%2Fpictures%2Fac0cf58b-f9ee-40de-945c-addfb8a36b5c.jpg%3Fim_w%3D720&f=1&nofb=1&ipt=2764f1d2214bd6e097a473037dd25deb916b58e53494a647d60ed9d6996cf332"
+  },
+  {
+    "id": "3",
+    "houseName": "Third Home",
+    "price": "780",
+    "location": "Chattogram",
+    "rating": "8/10",
+    "photoURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnews.airbnb.com%2Fwp-content%2Fuploads%2Fsites%2F4%2F2019%2F06%2FPJM020719Q202_Luxe_WanakaNZ_LivingRoom_0264-LightOn_R1.jpg%3Ffit%3D2500%252C1666&f=1&nofb=1&ipt=0934cd326697440f4ac56d7aa194b6f8fd206b78477e9c1b084d42b2f3265391"
+  },
+  {
+    "id": "4",
+    "houseName": "Fourth Home",
+    "price": "955",
+    "location": "Sylhet",
+    "rating": "9/10",
+    "photoURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F589df60a9b67416638b3bf66%2Fmaster%2Fw_1200%2Cc_limit%2Fluxury-retreats-cr-courtesy.jpg%3Fmbid%3Dsocial_retweet&f=1&nofb=1&ipt=e6bc43226fa982778f63987d481ec450ef2f86f6658179e22f6b5c555caa81ba"
+  },
+  {
+    "id": "5",
+    "houseName": "Fifth Home",
+    "price": "440",
+    "location": "Rangpur",
+    "rating": "8/10",
+    "photoURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp11613138.jpg&f=1&nofb=1&ipt=746be7ccd9b8ef9462f64379bfefacc13644e7384cb96d382ffa315f177ebae3"
+  },
+  {
+    "id": "6",
+    "houseName": "Sixth Home",
+    "price": "790",
+    "location": "Chapai",
+    "rating": "7/10",
+    "photoURL": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.peerspace.com%2Fresources%2Fwp-content%2Fuploads%2FModernist-home-with-pool-roof-deck-santa-monica-los-angeles-rental.jpg&f=1&nofb=1&ipt=e558e3154ea670b50b9d6760e92f98e17ec1b2581ccd23a704894cdfeae3a2ee"
+  }
+]

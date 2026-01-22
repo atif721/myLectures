@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import Favourite from "./favourite.js";
 
 const homeSchema = new mongoose.Schema({
   houseName: {
@@ -22,12 +21,12 @@ const homeSchema = new mongoose.Schema({
   description: String,
 });
 
-homeSchema.pre("findOneAndDelete", async function () {
-  console.log("Came to delete pre hook favorutie");
-  console.log("fav", Favourite);
-  const homeId = this.getQuery()._id;
-  await Favourite.deleteMany({ houseId: homeId });
-});
+// homeSchema.pre("findOneAndDelete", async function () {
+//   console.log("Came to delete pre hook favorutie");
+//   console.log("fav", Favourite);
+//   const homeId = this.getQuery()._id;
+//   await Favourite.deleteMany({ houseId: homeId });
+// });
 
 export default mongoose.model("Home", homeSchema);
 

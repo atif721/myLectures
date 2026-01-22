@@ -55,6 +55,7 @@ export const postAddHome = (req, res, next) => {
         pageTitle: "Home Added",
         currentPage: "homes added",
         isLoggedIn: req.isLoggedIn,
+        user: req.session.user,
       });
     })
     .catch((err) => {

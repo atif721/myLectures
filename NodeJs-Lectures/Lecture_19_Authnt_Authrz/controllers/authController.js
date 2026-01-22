@@ -8,7 +8,18 @@ const getSignup = (req, res, next) => {
     currentPage: "signup",
     isLoggedIn: false,
     errors: [],
-    oldInput: { firstName: "", lastName: "", email: "", password: "", userType: "" },
+    oldInput: { firstName: "", lastName: "", email: "", userType: "" },
+    user: {},
+  });
+};
+
+const getLogin = (req, res, next) => {
+  res.render("auth/login", {
+    pageTitle: "Login",
+    currentPage: "login",
+    isLoggedIn: false,
+    errors: [],
+    oldInput: { email: "" },
     user: {},
   });
 };
@@ -35,7 +46,8 @@ const postSignup = [
     .matches(/[A-Z]/)
     .withMessage("Password must contain at least one uppercase letter")
     .matches(/[!@#$%^&*().?,<>{}]/)
-    .withMessage("Password must contain at least one speacial character"),
+    .withMessage("Password must contain at least one speacial character")
+    .trim(),
 
   check("confirmPassword")
     .trim()
@@ -70,7 +82,7 @@ const postSignup = [
       return res.status(422).render("auth/signup", {
         pageTitle: "SignUp",
         currentPage: "signup",
-        isLoggedIn: true,
+        isLoggedIn: false,
         errors: errors.array().map((err) => err.msg),
         oldInput: { firstName, lastName, email, password, userType },
         user: {},
@@ -90,30 +102,23 @@ const postSignup = [
         return res.status(422).render("auth/signup", {
           pageTitle: "SignUp",
           currentPage: "signup",
-          isLoggedIn: true,
+          isLoggedIn: false,
           errors: [err.message],
-          oldInput: { firstName, lastName, email, password, userType },
+          oldInput: { firstName, lastName, email, userType },
           user: {},
         });
       });
   },
 ];
 
-const getLogin = (req, res, next) => {
-  res.render("auth/login", {
-    pageTitle: "Login",
-    currentPage: "login",
-    isLoggedIn: false,
-    errors: [],
-    oldInput: { email: "" },
-    user: {},
-  });
-};
-
 const postLogin = async (req, res, next) => {
   try {
     const { email, password } = req.body;
+
     const user = await User.findOne({ email });
+
+    console.log("postLogin user", user);
+
     if (!user) {
       return res.status(422).render("auth/login", {
         pageTitle: "Login",
@@ -121,7 +126,6 @@ const postLogin = async (req, res, next) => {
         isLoggedIn: false,
         errors: ["User does not exist"],
         oldInput: { email },
-
         user: {},
       });
     }
@@ -140,24 +144,29 @@ const postLogin = async (req, res, next) => {
 
     req.session.isLoggedIn = true;
     req.session.user = user;
-    await req.session.save();
-    res.redirect("/");
+    
+    req.session.save((err) => {
+      if (err) {
+        console.error("Session save error:", err);
+        return res.redirect("/login");
+      }
+      res.redirect("/");
+    });
   } catch (err) {
-    console.log("Error ", err);
+    next(err);
   }
 };
 
 const postLogout = (req, res, next) => {
-  console.log(req.body);
   req.session.destroy(() => {
-    res.redirect("/");
+    res.redirect("/login");
   });
 };
 
 export default {
   getSignup,
-  postSignup,
   getLogin,
+  postSignup,
   postLogin,
   postLogout,
 };

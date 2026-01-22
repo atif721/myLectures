@@ -1,6 +1,6 @@
 {
-  "watch": ["."],
-  "ext": "js,json,ejs",
-  "ignore": ["data"],
-  "exec": "node app.js"
+  "watch": ["controllers", "routes", "app.js"],
+  "ignore": ["node_modules", "uploads"],
+  "exec": "node app.js",
+  "ext": "js,ejs,json"
 }

@@ -316,9 +316,6 @@
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
-  .h-96 {
-    height: calc(var(--spacing) * 96);
-  }
   .min-h-screen {
     min-height: 100vh;
   }

@@ -1,3 +1,4 @@
+import { unlink } from "node:fs";
 import Home from "../models/home.js";
 
 export const getAddHome = (req, res, next) => {
@@ -43,9 +44,17 @@ export const getHostHome = (req, res, next) => {
 };
 
 export const postAddHome = (req, res, next) => {
-  const { houseName, price, location, rating, photo, description } = req.body;
+  const { houseName, price, location, rating, description } = req.body;
+  console.log(houseName, price, location, rating, description);
+  console.log(req.file);
 
-  const home = new Home({ houseName, price, location, rating, photo, description });
+  const photo = req.file ? req.file.path : null;
+
+  if (!photo) {
+    return res.status(422).send("No image provided");
+  }
+
+  const home = new Home({ houseName, price, photo, location, rating, description });
 
   home
     .save()
@@ -64,7 +73,7 @@ export const postAddHome = (req, res, next) => {
 };
 
 export const postEditHome = (req, res, next) => {
-  const { id, houseName, price, location, rating, photo, description } = req.body;
+  const { id, houseName, price, location, rating, description } = req.body;
 
   Home.findById(id)
     .then((home) => {
@@ -76,8 +85,16 @@ export const postEditHome = (req, res, next) => {
       home.price = price;
       home.location = location;
       home.rating = rating;
-      home.photo = photo;
       home.description = description;
+
+      if (req.file) {
+        unlink(home.photo, (err) => {
+          if (err) {
+            console.log("Error while deleting photo", err);
+          }
+        });
+        home.photo = req.file.path;
+      }
 
       return home.save();
     })

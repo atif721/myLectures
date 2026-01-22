@@ -43,9 +43,9 @@ export const getHostHome = (req, res, next) => {
 };
 
 export const postAddHome = (req, res, next) => {
-  const { houseName, price, location, rating, photoURL, description } = req.body;
+  const { houseName, price, location, rating, photo, description } = req.body;
 
-  const home = new Home({ houseName, price, location, rating, photoURL, description });
+  const home = new Home({ houseName, price, location, rating, photo, description });
 
   home
     .save()
@@ -64,7 +64,7 @@ export const postAddHome = (req, res, next) => {
 };
 
 export const postEditHome = (req, res, next) => {
-  const { id, houseName, price, location, rating, photoURL, description } = req.body;
+  const { id, houseName, price, location, rating, photo, description } = req.body;
 
   Home.findById(id)
     .then((home) => {
@@ -76,7 +76,7 @@ export const postEditHome = (req, res, next) => {
       home.price = price;
       home.location = location;
       home.rating = rating;
-      home.photoURL = photoURL;
+      home.photo = photo;
       home.description = description;
 
       return home.save();

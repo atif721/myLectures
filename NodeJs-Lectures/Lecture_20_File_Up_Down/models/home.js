@@ -17,7 +17,7 @@ const homeSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  photoURL: String,
+  photo: String,
   description: String,
 });
 
@@ -51,7 +51,7 @@ export default mongoose.model("Home", homeSchema);
 //       type: Number,
 //       required: true,
 //     },
-//     photoURL: String,
+//     photo: String,
 //     description: String,
 //   }),
 // );

@@ -17,7 +17,7 @@ export const getItemFromServer = async () => {
 };
 
 export const markCompletedOnServer = async (id) => {
-  const response = await fetch(`http://localhost:3000/api/todo/${id}`, {
+  const response = await fetch(`http://localhost:3000/api/todo/${id}/completed`, {
     method: "PUT",
   });
   const item = await response.json();

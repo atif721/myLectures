@@ -1,13 +1,5 @@
-.inp {
-  width: 100%;
-}
+@import "tailwindcss";
 
-.todo-container {
-  width: 750px;
-  margin: 0 auto;
-}
-
-.item-container {
-  text-align: left;
-  margin-left: 7rem;
+button {
+  cursor: pointer;
 }

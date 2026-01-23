@@ -1,9 +1,11 @@
 import express from "express";
 import mongoose from "mongoose";
 import path from "path";
+import cors from "cors";
 
 import { getError } from "./controllers/errorController.js";
 import { rootDir } from "./utils/pathUtil.js";
+import { todoItemsRouter } from "./routes/todoItemsRouter.js";
 
 const PORT = 3000;
 const MONGO_URL = "mongodb+srv://root:pass321@learningnodemongo.6f1howb.mongodb.net/todoapp?appName=LearningNodeMongo";
@@ -11,12 +13,15 @@ const MONGO_URL = "mongodb+srv://root:pass321@learningnodemongo.6f1howb.mongodb.
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(rootDir, "public")));
+app.use(express.json());
+app.use(cors());
 
 app.use((req, res, next) => {
   console.log(req.url, req.method);
   next();
 });
+
+app.use("/api/todo", todoItemsRouter);
 
 app.use(getError);
 

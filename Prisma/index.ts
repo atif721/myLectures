@@ -36,10 +36,23 @@ async function main() {
   // });
   // console.log('All users:', JSON.stringify(allUsers, null, 2));
 
-  const allUsers = await prisma.user.findUnique({
-    where: { id: 2 }
-  });
-  console.log('All users:', JSON.stringify(allUsers, null, 2));
+  // Update users
+
+  // const updateUser = await prisma.user.update({
+  //   where: { id: 3 },
+  //   data: {
+  //     name: "Sabbir Rahman"
+  //   }
+  // });
+  // console.log('All users:', JSON.stringify(updateUser, null, 2));
+  // const updateUser = await prisma.user.updateMany({
+  //   where: { name: "Sabbir Rahman" },
+  //   data: {
+  //     name: "Sabbir"
+  //   }
+  // });
+  // console.log('All users:', JSON.stringify(updateUser, null, 2));
+
 }
 
 main()

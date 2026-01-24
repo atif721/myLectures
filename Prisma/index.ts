@@ -53,6 +53,17 @@ async function main() {
   // });
   // console.log('All users:', JSON.stringify(updateUser, null, 2));
 
+  // delete field
+  // const deleteUser = await prisma.user.delete({
+  //   where: { id: 1 },
+  // });
+  // console.log('All users:', JSON.stringify(deleteUser, null, 2));
+  // const deleteUser = await prisma.user.deleteMany({
+  //   where: {
+  //     OR: [{ id: 5 }, { id: 4 }],
+  //   },
+  // });
+  // console.log('All users:', JSON.stringify(deleteUser, null, 2));
 }
 
 main()

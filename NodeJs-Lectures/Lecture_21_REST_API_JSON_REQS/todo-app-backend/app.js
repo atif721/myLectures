@@ -1,4 +1,4 @@
-import express from "express";
+
 import mongoose from "mongoose";
 import path from "path";
 import cors from "cors";
@@ -14,7 +14,14 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  }),
+);
 
 app.use((req, res, next) => {
   console.log(req.url, req.method);

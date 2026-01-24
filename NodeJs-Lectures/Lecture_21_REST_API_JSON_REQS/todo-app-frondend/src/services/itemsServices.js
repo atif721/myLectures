@@ -20,6 +20,9 @@ export const markCompletedOnServer = async (id) => {
   const response = await fetch(`http://localhost:3000/api/todo/${id}/completed`, {
     method: "PUT",
   });
+  if (!response.ok) {
+    throw new Error(`Failed to mark completed: ${response.status} ${response.statusText}`);
+  }
   const item = await response.json();
   return mapServerItemToLocalItem(item);
 };

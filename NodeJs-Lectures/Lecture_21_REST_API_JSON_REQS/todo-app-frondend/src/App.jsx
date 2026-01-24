@@ -38,9 +38,6 @@ function App() {
 
   const handleMarkCompleted = async (id) => {
     try {
-      // Find the current item to check its state
-      const currentItem = todoItems.find((item) => item.id === id);
-
       // Optimistic update - update UI immediately
       const newTodoItems = todoItems.map((item) => (item.id === id ? { ...item, completed: !item.completed } : item));
       setTodoItems(newTodoItems);
@@ -51,9 +48,15 @@ function App() {
       setTodoItems(finalTodoItems);
     } catch (error) {
       console.error("Error marking item as completed:", error);
-      alert("Failed to mark item as completed. Please try again.");
-      // Revert the optimistic update on error
-      setTodoItems(todoItems);
+      console.error("Error details:", error.message);
+      alert(`Failed to mark item as completed: ${error.message}`);
+      // Revert the optimistic update on error by refetching
+      try {
+        const refreshedItems = await getItemFromServer();
+        setTodoItems(refreshedItems);
+      } catch (refreshError) {
+        console.error("Error refetching items:", refreshError);
+      }
     }
   };
 

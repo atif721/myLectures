@@ -1,12 +1,26 @@
 /// <reference types="node" />
-import { prisma } from './lib/prisma';
+import { prisma } from "./lib/prisma";
 
 async function main() {
-  const user = await prisma.user.create({
-    data: {
-      name: 'Alice',
-      email: 'alice@prisma.io',
-    },
+  // const user = await prisma.user.create({
+  //   data: {
+  //     name: 'Alice',
+  //     email: 'alice@prisma.io',
+  //   },
+  // });
+  // console.log('Created user:', user);
+
+  const user = await prisma.user.createMany({
+    data: [
+      {
+        name: 'nishat',
+        email: 'nishat1234@gamil.com',
+      },
+      {
+        name: 'Uhe',
+        email: 'uhe1234@gamil.com',
+      },
+    ]
   });
   console.log('Created user:', user);
 

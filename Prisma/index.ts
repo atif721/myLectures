@@ -2,6 +2,8 @@
 import { prisma } from "./lib/prisma";
 
 async function main() {
+  //create
+
   // const user = await prisma.user.create({
   //   data: {
   //     name: 'Alice',
@@ -10,27 +12,34 @@ async function main() {
   // });
   // console.log('Created user:', user);
 
-  const user = await prisma.user.createMany({
-    data: [
-      {
-        name: 'nishat',
-        email: 'nishat1234@gamil.com',
-      },
-      {
-        name: 'Uhe',
-        email: 'uhe1234@gamil.com',
-      },
-    ]
-  });
-  console.log('Created user:', user);
+  // const user = await prisma.user.createMany({
+  //   data: [
+  //     {
+  //       name: 'nishat',
+  //       email: 'nishat1234@gamil.com',
+  //     },
+  //     {
+  //       name: 'Uhe',
+  //       email: 'uhe1234@gamil.com',
+  //     },
+  //   ]
+  // });
+  // console.log('Created user:', user);
 
   // Fetch all users with their posts
+
   // const allUsers = await prisma.user.findMany({
-  //   include: {
-  //     posts: true,
-  //   },
   // });
   // console.log('All users:', JSON.stringify(allUsers, null, 2));
+  // const allUsers = await prisma.user.findUnique({
+  //   where: { id: 2 }
+  // });
+  // console.log('All users:', JSON.stringify(allUsers, null, 2));
+
+  const allUsers = await prisma.user.findUnique({
+    where: { id: 2 }
+  });
+  console.log('All users:', JSON.stringify(allUsers, null, 2));
 }
 
 main()

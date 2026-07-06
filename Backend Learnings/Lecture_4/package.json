@@ -1,0 +1,24 @@
+{
+  "name": "Lecture_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.cjs",
+  "scripts": {
+    "dev": "nodemon script.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.9.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

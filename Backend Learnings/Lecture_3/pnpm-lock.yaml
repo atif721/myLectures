@@ -207,16 +207,24 @@ importers:
 
   .:
     dependencies:
+      accessibility:
+        specifier: 3.0.9
+        version: 3.0.9
       one-liner-joke:
         specifier: ^1.2.2
         version: 1.2.2
 
 packages:
 
+  accessibility@3.0.9:
+    resolution: {integrity: sha512-p05tZNd09C1Voz/+nKQdZxajFo0zI8sDdwZGThoPqole7lCkK2mOg5WJRGDpc+i9iPOoSBKA6mgk9cW5RFhPqQ==}
+
   one-liner-joke@1.2.2:
     resolution: {integrity: sha512-ELNnmMtLPmp3b85J0FGm7i4Q5vfqPNefj6r5oMsk9OgrC3iaccIyn8FInVSsG3nGud4XIDqUKesLcGRCxoU2Zw==}
     engines: {node: '>=6.0.0'}
 
 snapshots:
+
+  accessibility@3.0.9: {}
 
   one-liner-joke@1.2.2: {}

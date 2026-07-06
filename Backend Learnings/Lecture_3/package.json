@@ -5,6 +5,7 @@
   "main": "script.cjs",
   "scripts": {
     "dev": "node script.cjs",
+    "vasta": "echo Hello World",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -19,6 +20,7 @@
   },
   "type": "module",
   "dependencies": {
+    "accessibility": "3.0.9",
     "one-liner-joke": "^1.2.2"
   }
 }

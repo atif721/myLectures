@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 7</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  </head>
+  <body>
+    <div class="main w-full min-h-screen bg-zinc-900 flex flex-col justify-center items-center text-white">
+      <a class="cursor-pointer text-blue-600 text-2xl text-bold text-underline" href="/">Go to home</a>
+      <div class="tasks p-10 flex gap-5 flex-wrap justify-center">
+        <div class="w-72 px-3 py-4 bg-zinc-800 rounded-md">
+        <form action="/edit" method="post" class="flex flex-col items-center">
+          <input class="block px-5 py-2 mb-5 bg-zinc-600 rounded-lg" type="text" placeholder="Previous title" name="previousTitle" value="<%= filename %>">
+          <input class="block px-5 py-2 mb-5 bg-zinc-600 rounded-lg" type="text" placeholder="New title" name="newTitle">
+          <button class="cursor-pointer text-black p-5 bg-yellow-400 rounded-lg" type="submit" value="Create Task">Update filename</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
